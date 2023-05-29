@@ -1,0 +1,104 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  body {
+    width:100%;
+    min-height: 100vh;
+    background-color:rgba(146, 146, 146, 0.745);
+    padding-bottom:100px;
+  }
+  
+  
+  /*The search-bar*/
+  .todo-input {
+    width:100%;
+    max-width: 540px;
+    margin:50px auto  20px;
+    padding: 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+  }
+  h2 {
+      -size: 2em;
+  }
+  .add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left:20px;
+    margin-bottom:25px;
+    background-color: white;
+  }
+  .add input {
+    flex:1;
+    border:none;
+    outline:none;
+    padding:10px;
+  }
+  button {
+    border:none;
+    outline:none;
+    padding: 16px 50px;
+    background:#e5c93d;
+    color:white;
+    font-size: 16px;
+    cursor:pointer;
+    border-radius: 40px;
+  }
+  button:hover {
+    opacity:0.5;
+    transition: 0.4s;
+  }
+  
+  
+  /*The two todo-lists. Styling the section so that it looks like the papers are hanging*/
+  .todo-lists {
+    display: flex;
+    justify-content: center;
+    gap:150px;
+    flex-wrap: wrap;
+  }
+  .list {
+    --paper-dark: #e5c93d;
+    --paper-color: #ffed87;
+    background: linear-gradient(
+      135deg,
+      var(--paper-dark),
+      30%,
+      var(--paper-color));
+      box-shadow: 3px 3px 2px var(--paper-shadow);
+    transform: rotate(10deg);
+    transform-origin: top left;
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    padding:0 50px 0px 50px;
+    gap:20px;
+    min-height:500px;
+    box-shadow: 0 5px 14px rgba(0,0,0,.7);
+  }
+.list p {
+    font-size: 2.5em;
+    font-family: 'Reenie Beanie';
+    text-align: center;
+    padding-top:20px;
+}
+
+
+
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    

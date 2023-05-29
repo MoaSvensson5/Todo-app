@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reenie+Beanie">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+
+        <header class="todo-input">
+            <h2>To-do list</h2>
+            <div class="add">
+                <input type="text" id="titleInput" placeholder="Title">
+                <input type="text" id="descriptionInput" placeholder="Description">
+                <button class="w3-button w3-circle w3-teal" type="submit" onclick="addTodo()">+</button>
+            </div>
+        </header>
+
+        <main class="todo-lists">
+            <section class="list">
+                <p>Undone</p>
+                <ul id="undone"></ul>
+            </section>
+            <section class="list">
+                <p>Done</p>
+                <ul id="done"></ul>
+            </section>
+        </main>
+
+        <script src="newscript.js"></script>
+
+    </body>
+</html>
