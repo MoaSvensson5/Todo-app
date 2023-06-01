@@ -24,7 +24,7 @@ body {
     gap:20px;
 }
 h2 {
-      -size: 2em;
+    -size: 2em;
 }
 .add {
     display: flex;
@@ -178,7 +178,9 @@ button:hover {
       var(--pin-dark) 80%
     );
 }
-  
+ 
+
+/*The content on the papers*/
 ul {
     list-style-type: none;
     padding-bottom:20px;
@@ -211,13 +213,3 @@ ul li .close:hover {
     opacity:1;
     transition: 0.4s;
 }
-  
-  
-    
-    
-    
-    
-    
-    
-    
-    

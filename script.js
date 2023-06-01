@@ -1,5 +1,5 @@
 //start the id at 1
-let idCounter = 1;
+let todoId = 1;
 
 function addTodo() {
     let titleInput = document.getElementById('titleInput').value;
@@ -31,7 +31,7 @@ function addTodo() {
     })
     .then(res => res.json())
     .then(data => {
-        data.id = idCounter++; //for every todo the id increase with 1 to get an unique id
+        data.id = todoId++; //for every todo the id increase with 1 to get an unique id
         let newTodo = document.createElement('li');
         let day = date.getDate();
         let month = date.getMonth() + 1; // Month is zero-based, so I add 1
@@ -60,7 +60,6 @@ function addTodo() {
     document.getElementById('descriptionInput').value = "";
     });
 }
-
 
 
 function moveTodo() {
@@ -94,7 +93,7 @@ function moveTodo() {
             let dateElement = todoItem.querySelector("date");
             dateElement.textContent = `completed: ${formattedDate}`;
         } else {
-            // I want the user to be able to move the todo back to undone, but then the created date will be gone 
+            // I want the user to be able to move the todo back to undone, but then the created date will be deleted
             doneList.removeChild(todoItem);
             undoneList.appendChild(todoItem);
             let dateElement = todoItem.querySelector("date");
