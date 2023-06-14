@@ -24,7 +24,7 @@ body {
     gap:20px;
 }
 h2 {
-    -size: 2em;
+    font-size: 2em;
 }
 .add {
     display: flex;
